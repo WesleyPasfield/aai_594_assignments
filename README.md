@@ -2,7 +2,7 @@
 
 **University of San Diego | Masters in Applied Artificial Intelligence**
 
-An 8-week graduate course on building, evaluating, and improving agentic AI systems. Students build the **UltraFeedback Expert** — a tool-calling agent on Databricks — progressing from environment setup to human-aligned evaluation.
+An 7-week graduate course on building, evaluating, and improving agentic AI systems. Students build the **UltraFeedback Expert** — a tool-calling agent on Databricks — progressing from environment setup to human-aligned evaluation.
 
 ## Platform
 
@@ -142,15 +142,3 @@ assignment_6/
 ├── AAI_594_Assignment_6_Lab.ipynb
 └── SUBMISSION_6.md
 ```
-
-## Reading List
-
-| Week | Readings |
-|------|----------|
-| 1 | [Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents) -- [Emergent Hierarchical Reasoning](https://arxiv.org/pdf/2509.03646) |
-| 2 | [DeepSeek R1](https://arxiv.org/abs/2501.12948) -- [Why Reasoning Models Will Generalize](https://www.interconnects.ai/p/why-reasoning-models-will-generalize) |
-| 3 | [Practical Guide for Agentic AI Workflows](https://arxiv.org/pdf/2512.08769) -- [MCP Architecture](https://modelcontextprotocol.io/docs/learn/architecture) |
-| 4 | [GEPA DSPy Optimization](https://arxiv.org/pdf/2507.19457) -- [Everything is Context](https://www.arxiv.org/pdf/2512.05470) |
-| 5 | [Product Evals in Three Steps](https://eugeneyan.com/writing/product-evals/) -- [Survey on Evaluation of LLM-based Agents](https://arxiv.org/pdf/2503.16416) -- [LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/) |
-| 6 | [Who Validates the Validators](https://arxiv.org/abs/2404.12272) -- [What is A2A](https://a2a-protocol.org/latest/topics/what-is-a2a/) |
-| 7 | [Pragmatic Vision for Interpretability](https://www.alignmentforum.org/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability) -- [Towards Monosemanticity](https://transformer-circuits.pub/2023/monosemantic-features) -- [Scaling Monosemanticity](https://transformer-circuits.pub/2024/scaling-monosemanticity/) |
