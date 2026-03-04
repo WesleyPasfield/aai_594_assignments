@@ -1,85 +1,111 @@
 # AAI 594 — Assignment 4a Submission
 
-**Name:**  
+**Name:**
 **Date:**
 
 > **Setup:** Your submission folder should look like:
 >
 > ```
 > assignment_4/
-> ├── AAI_594_Assignment_4a_Lab.ipynb   ← executed notebook with all outputs
-> ├── SUBMISSION_4a.md                  ← this file
+> ├── driver.ipynb                      ← executed notebook with all outputs
+> ├── SUBMISSION_4a.md                  ← this file (with your analysis written in)
 > ├── PROPOSAL_4b.md                    ← project proposal
 > └── screenshots/
->     └── ai_playground.png             ← Section 4 (required)
+>     └── ai_playground.png             ← AI Playground with UC tools + MCP (required)
 > ```
 
 ---
 
-## Deliverables
+## Criterion 1: Executed 5 test traces across 3 models
 
-### 1. Executed Notebook
+Run the evaluation cell in driver.ipynb so that all 5 test queries execute against all 3 LLMs in `LLMS_TO_COMPARE`. The notebook output should show 15 total traces (5 queries × 3 models) with responses visible.
 
-- [ ] **Section 3:** Vector Search endpoint and index recreated successfully.
-- [ ] **Section 4:** Prototyped agent in AI Playground with tools attached.
-- [ ] **Section 5:** Agent code runs in notebook. Test queries produce tool-calling outputs.
-- [ ] **Section 6:** UC functions listed via `SHOW USER FUNCTIONS`.
-- [ ] **Section 7:** Prompt registered in UC Prompt Registry with two versions and "production" alias.
-- [ ] **Section 8:** Same 3 queries run against 2 different LLMs with outputs visible.
-- [ ] **Section 8:** Written comparison analysis of the two models.
-- [ ] **Section 9:** Cleanup confirmed — endpoint and index deleted.
+**Test queries run:**
 
-### 2. AI Playground Screenshot (Required)
+| # | Query | Purpose |
+|---|-------|---------|
+| 1 | "What models are involved in testing?" | UC function — list/enumerate tool |
+| 2 | "Analyze the complexity of: What is 2+2?" | UC function — simple instruction analysis |
+| 3 | "What sources are available in the dataset and how do they compare in size?" | UC function — multi-part lookup |
+| 4 | "Search the web for the latest news about Llama models from Meta." | MCP tool — web search |
+| 5 | "How has vicuna-33b performed against llama-2-70b-chat?" | UC function — model comparison |
 
-![AI Playground with tools and a tool-calling conversation](screenshots/ai_playground.png)
+**Models compared:**
+- `databricks-gpt-oss-120b`
+- `databricks-gpt-oss-20b`
+- `databricks-llama-4-maverick`
 
-### 3. Project Proposal (Required)
+**Checklist:**
 
-- [ ] `PROPOSAL_4b.md` completed and included in submission folder.
+- [ ] Evaluation cell executed with all outputs visible in the notebook.
+- [ ] 15 traces present (5 queries × 3 models) in the notebook output or Experiments UI.
+- [ ] AI Playground screenshot included at `screenshots/ai_playground.png`.
 
-### 4. Prompt Optimization Reflection (Optional)
+---
 
-- [ ] **Section 10:** Written reflection on prompt optimization concepts.
+## Criterion 2: Written model comparison
+
+**Write your analysis below. Do not use AI to write this — review the traces yourself and answer in your own words.**
+
+Look at the notebook output and the MLflow Experiments UI (trace view) to answer the questions below. You don't need to answer every sub-question exhaustively — pick the observations that stood out most to you.
+
+---
+
+### Tool selection
+
+1. For each of the 5 queries, did all three models call the correct tool? Were there any queries where a model chose the wrong tool, skipped a tool entirely, or called an unnecessary one?
+
+2. Did any model call multiple tools in sequence when one would have sufficed, or vice versa? What does that suggest about how differently these models reason about tool use?
+
+**Your answer:**
+
+---
+
+### Response quality
+
+3. For query 3 (sources comparison) and query 5 (vicuna vs llama comparison), which model's answer was most accurate and specific? Which was vaguest? What was different about how the responses were constructed?
+
+4. For the web search query (query 4), did all three models successfully invoke the MCP tool and incorporate the results into their answer? If one failed or hallucinated, describe what happened.
+
+**Your answer:**
+
+---
+
+### Style and behavior
+
+5. How did the length and tone of responses differ between models? Was verbosity helpful or did it obscure the answer?
+
+6. When the agent retrieved a tool result, did any model add unsolicited commentary, caveats, or hallucinated detail beyond what the tool returned? Give a specific example if so.
+
+**Your answer:**
+
+---
+
+### Judgment
+
+7. Based on what you observed, which model would you choose to back this agent if you were deploying it for real users? Why? What trade-offs are you accepting with that choice?
+
+**Your answer:**
 
 ---
 
 ## Grading Rubric
 
-### Criterion 1: Agent Implementation (30%)
+### Criterion 1: Execution (40%)
 
-*Did the student build a working agent with tool calling?*
-
-| Meets or Exceeds | Approaches | Below | Inadequate |
-|---|---|---|---|
-| Agent runs in notebook and correctly calls UC functions in response to test queries. Code is well-organized with clear comments. Evidence of AI Playground prototyping (screenshot). Agent handles queries that don't need tools appropriately. | Agent runs and calls at least one tool correctly. Some test queries work. Screenshot provided but may show limited testing. | Agent code is present but fails on most queries or doesn't call tools. Limited evidence of Playground use. | No working agent code. No Playground screenshot. |
-
-### Criterion 2: Prompt Registration (20%)
-
-*Did the student register and version prompts correctly?*
+*Did the student run all 5 test queries against all 3 models?*
 
 | Meets or Exceeds | Approaches | Below | Inadequate |
-|---|---|---|---|
-| Prompt registered with two versions and a "production" alias. Student demonstrates loading by alias. Commit messages are descriptive. Student understands the purpose of versioning. | Prompt registered with at least one version. Alias may be missing or commit messages are generic. | Prompt registration attempted but incomplete or errors in output. | No prompt registration attempted. |
+|------------------|------------|-------|------------|
+| All 15 traces visible in notebook output or Experiments UI. All 5 queries and all 3 models present. AI Playground screenshot included. | 10–14 traces present; one model or query missing. Screenshot included. | Fewer than 10 traces or only 1–2 models tested. | Evaluation cell not run or no outputs visible. |
 
-### Criterion 3: LLM Comparison (25%)
+### Criterion 2: Analysis (60%)
 
-*Did the student meaningfully compare two LLMs?*
-
-| Meets or Exceeds | Approaches | Below | Inadequate |
-|---|---|---|---|
-| Same 3 queries run against 2 models with all outputs visible. Written analysis covers tool usage, quality, verbosity, and error handling with specific examples from the outputs. Connects observations to agentic AI concepts. | Queries run against 2 models. Analysis covers some dimensions but may lack specific examples or depth. | Only one model tested, or analysis is superficial (e.g., "Model A was better"). | No comparison attempted. |
-
-### Criterion 4: Notebook Quality (15%)
+*Did the student meaningfully assess the differences between models in their own words?*
 
 | Meets or Exceeds | Approaches | Below | Inadequate |
-|---|---|---|---|
-| All cells executed with outputs. Clean code with comments. Cleanup confirmed. Coherent narrative from Playground to comparison. | Most cells executed. Minor issues with organization. | Significant cells missing output. Disorganized. | Notebook not executed or missing major sections. |
-
-### Criterion 5: Prompt Optimization Reflection (10%)
-
-| Meets or Exceeds | Approaches | Below | Inadequate |
-|---|---|---|---|
-| Thoughtful answers to all 3 reflection questions. Connects readings to the agent built in this assignment. Proposes a concrete metric for DSPy optimization. | Answers present but surface-level. May not connect to readings. | Brief or generic answers. | Section not attempted. |
+|------------------|------------|-------|------------|
+| Answers address tool selection, response quality, and a judgment call with specific examples drawn from the traces. Observations are concrete (e.g. "Model X called `compare_models` twice for query 5 before answering"). Clearly written in the student's own words — not AI-generated prose. | Most questions answered with some specificity. May lack concrete examples or skip one category entirely. | Answers are generic or surface-level (e.g. "Model A was better overall"). Little reference to specific traces. | Analysis not written, or clearly AI-generated with no original observation. |
 
 ---
 
