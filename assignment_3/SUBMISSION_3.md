@@ -24,7 +24,7 @@
 Submit your executed notebook (`.ipynb` with cell outputs) alongside this file. The notebook should include:
 
 - [ ] **Section 3:** Dataset verification cell ran successfully (row count, columns, schema).
-- [ ] **Section 4.1:** SQL function `lookup_source_info` created and tested with output visible.
+- [ ] **Section 4.1:** SQL functions `all_model_combinations` and `compare_models` created and tested with output visible.
 - [ ] **Section 4.2:** Python function `analyze_instruction` created and tested with output visible.
 - [ ] **Section 4.3:** Your own UC function created and tested with output visible.
 - [ ] **Section 5:** `SHOW USER FUNCTIONS` output listing all registered functions.
