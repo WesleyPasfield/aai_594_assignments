@@ -1,4 +1,4 @@
-# AAI 594 — Assignment 6 Submission
+# AAI 594: Assignment 6 Submission
 
 **Name:**  
 **Date:**
@@ -20,15 +20,15 @@
 ### 1. Executed Notebook
 
 - [ ] **Section 3:** Agent and custom judge recreated. Vector Search endpoint and index working.
-- [ ] **Section 4:** 15 traces generated with outputs visible in notebook.
-- [ ] **Section 5:** Human feedback logged for all 15 traces. Ratings (True/False) and rationales are specific and honest — not just placeholder text.
-- [ ] **Section 6:** `align()` ran successfully. Both original and aligned judge comparison results visible.
-- [ ] **Section 7:** All four reflection questions answered thoughtfully.
-- [ ] **Section 8:** Cleanup confirmed — endpoint and index deleted.
+- [ ] **Section 4:** 12 traces generated with outputs visible in notebook.
+- [ ] **Section 5:** Human feedback logged for all 12 traces. Ratings (True/False) and rationales are specific and honest, not just placeholder text.
+- [ ] **Section 6:** SIMBA alignment ran successfully. Both original and aligned judge comparison results visible.
+- [ ] **Section 7:** Both reflection questions answered thoughtfully.
+- [ ] **Cleanup note:** Reviewed. No additional cleanup was required for this lab.
 
-### 2. Deployment (Optional)
+### 2. Submission Notes
 
-- [ ] **Section 9:** Attempted deployment or reviewed the conceptual walkthrough.
+- The optional `optimize_anything` / agent skills section is enrichment only. It is not required for submission and is not part of the grading rubric.
 
 ---
 
@@ -40,37 +40,31 @@
 
 | Meets or Exceeds | Approaches | Below | Inadequate |
 |---|---|---|---|
-| 15 traces generated with diverse questions (tools, no-tools, edge cases, multi-step). Trace outputs visible in notebook. Student can identify traces in MLflow UI. | 15 traces generated but questions lack diversity. Outputs visible. | Fewer than 15 traces or many errored. | No traces generated. |
+| 12 traces generated with diverse questions (tools, no-tools, edge cases, multi-step). Trace outputs visible in notebook. Student can identify traces in MLflow UI. | 12 traces generated but questions lack diversity. Outputs visible. | Fewer than 12 traces or many errored. | No traces generated. |
 
-### Criterion 2: Feedback Quality and Thoroughness (25%)
+### Criterion 2: Judge and Feedback Execution (20%)
 
-*Did the student provide genuine, thoughtful human feedback for all traces?*
-
-| Meets or Exceeds | Approaches | Below | Inadequate |
-|---|---|---|---|
-| All 15 traces have feedback with honest ratings and specific rationales. Student clearly reviewed the actual outputs — rationales reference specific agent behavior (e.g., "called wrong tool", "missed the comparison"). Mix of True/False ratings shows critical evaluation. | All 15 traces have feedback. Rationales are reasonable but may be generic ("looks good"). Mostly True ratings with 1-2 False. | Fewer than 15 traces have feedback. Rationales are copy-paste or single words. | Placeholder feedback not replaced. No actual review performed. |
-
-### Criterion 3: Align Execution and Analysis (25%)
-
-*Did align() run successfully and did the student analyze the results?*
+*Did the student run the judge and provide usable SME feedback?*
 
 | Meets or Exceeds | Approaches | Below | Inadequate |
 |---|---|---|---|
-| `align()` completed successfully. Student compares original vs. aligned judge prompts and explains the differences. Comparison evaluation shows the aligned judge better matches human feedback. Student understands the SIMBA optimization concept. | `align()` ran. Some comparison analysis but lacks depth. May not fully explain prompt differences. | `align()` attempted but errored, or analysis is minimal. | Not attempted. |
+| Judge scores and SME feedback are present for all 12 traces. Labels and rationales clearly reflect actual review of trace behavior. | Most traces have judge results and SME feedback, but some rationales are shallow. | Feedback is incomplete or mostly generic. | Judge execution or SME feedback is missing. |
 
-### Criterion 4: Reflection (20%)
+### Criterion 3: Align Execution and Analysis (30%)
+
+*Did alignment run successfully, and did the student analyze the resulting judge?*
+
+| Meets or Exceeds | Approaches | Below | Inadequate |
+|---|---|---|---|
+| SIMBA alignment completed successfully. The student compares the original and aligned judge results and prompts, then explains how the aligned judge better matches human feedback. | Alignment ran and some comparison is present, but the analysis lacks depth or concrete examples. | Alignment was attempted but not completed, or analysis is minimal. | Alignment was not attempted. |
+
+### Criterion 4: Reflection (30%)
 
 *Does the reflection demonstrate deep understanding of human-in-the-loop evaluation?*
 
 | Meets or Exceeds | Approaches | Below | Inadequate |
 |---|---|---|---|
-| All 4 questions answered with specific examples from this assignment. Connects to "Who Validates the Validators" reading. Articulates why automated judges alone are insufficient. Proposes a concrete plan for their final project. | Answers present and reasonable. May lack specific examples or reading connection. Proposal is generic. | Brief or surface-level answers. Missing questions. | Placeholder text only. |
-
-### Criterion 5: Notebook Quality (10%)
-
-| Meets or Exceeds | Approaches | Below | Inadequate |
-|---|---|---|---|
-| All cells executed with outputs. Clean code. Cleanup confirmed. Coherent progression from traces to feedback to alignment. | Most cells executed. Minor issues. | Significant cells missing output. | Not executed or missing major sections. |
+| Both reflection questions are answered with specific examples from this assignment. Responses connect alignment back to human-in-the-loop evaluation and explain why automated judges alone are insufficient. | Both answers are present and reasonable, but they lack specific examples or depth. | One reflection answer is missing or both are very surface-level. | Placeholder text only. |
 
 ---
 
