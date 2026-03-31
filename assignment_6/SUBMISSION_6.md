@@ -1,4 +1,4 @@
-# AAI 594: Assignment 6 Submission
+# AAI 510: Assignment 6 Submission
 
 **Name:**  
 **Date:**
@@ -7,7 +7,7 @@
 >
 > ```
 > assignment_6/
-> ├── AAI_594_Assignment_6_Lab.ipynb   ← executed notebook with all outputs
+> ├── AAI_510_Assignment_6_Lab.ipynb   ← executed notebook with all outputs
 > ├── SUBMISSION_6.md                  ← this file
 > └── screenshots/
 >     └── (optional: MLflow traces UI, aligned judge comparison)

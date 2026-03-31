@@ -1,4 +1,4 @@
-# AAI 594 — Agentic AI
+# AAI 510 — Agentic AI
 
 **University of San Diego | Masters in Applied Artificial Intelligence**
 
@@ -118,27 +118,27 @@ No new assignments. Students work on and present their final projects.
 
 ```
 assignment_1/
-├── AAI_594_Assignment_1_Lab.ipynb
+├── AAI_510_Assignment_1_Lab.ipynb
 └── SUBMISSION_1.md
 
 assignment_2/
-├── AAI_594_Assignment_2_Lab.ipynb
+├── AAI_510_Assignment_2_Lab.ipynb
 └── SUBMISSION_2.md
 
 assignment_3/
-├── AAI_594_Assignment_3_Lab.ipynb
+├── AAI_510_Assignment_3_Lab.ipynb
 └── SUBMISSION_3.md
 
 assignment_4/
-├── AAI_594_Assignment_4a_Lab.ipynb
+├── AAI_510_Assignment_4a_Lab.ipynb
 ├── SUBMISSION_4a.md
 └── PROPOSAL_4b.md
 
 assignment_5/
-├── AAI_594_Assignment_5_Lab.ipynb
+├── AAI_510_Assignment_5_Lab.ipynb
 └── SUBMISSION_5.md
 
 assignment_6/
-├── AAI_594_Assignment_6_Lab.ipynb
+├── AAI_510_Assignment_6_Lab.ipynb
 └── SUBMISSION_6.md
 ```

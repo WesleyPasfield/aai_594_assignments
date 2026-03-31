@@ -1,4 +1,4 @@
-# AAI 594 — Assignment 1 Submission
+# AAI 510 — Assignment 1 Submission
 
 **Name:**  
 **Date:**
@@ -7,7 +7,7 @@
 >
 > ```
 > assignment_1/
-> ├── AAI_594_Assignment_1_Lab.ipynb   ← executed notebook with outputs
+> ├── AAI_510_Assignment_1_Lab.ipynb   ← executed notebook with outputs
 > ├── SUBMISSION_1.md                  ← this file
 > └── screenshots/
 >     ├── cli_workspace_list.png       ← Section 6 (required)

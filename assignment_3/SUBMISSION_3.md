@@ -1,4 +1,4 @@
-# AAI 594 — Assignment 3 Submission
+# AAI 510 — Assignment 3 Submission
 
 **Name:**  
 **Date:**
@@ -7,7 +7,7 @@
 >
 > ```
 > assignment_3/
-> ├── AAI_594_Assignment_3_Lab.ipynb   ← executed notebook with all outputs
+> ├── AAI_510_Assignment_3_Lab.ipynb   ← executed notebook with all outputs
 > ├── SUBMISSION_3.md                  ← this file
 > ├── SKILL.md                         ← bonus: agent skill (if completed)
 > └── screenshots/

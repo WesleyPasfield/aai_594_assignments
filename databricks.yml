@@ -1,9 +1,9 @@
-# This is a Databricks asset bundle definition for AAI-594.
+# This is a Databricks asset bundle definition for AAI-510.
 # The Databricks extension requires databricks.yml configuration file.
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 
 bundle:
-  name: AAI-594
+  name: AAI-510
 
 targets:
   dev:

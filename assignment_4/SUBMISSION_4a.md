@@ -1,4 +1,4 @@
-# AAI 594 — Assignment 4a Submission
+# AAI 510 — Assignment 4a Submission
 
 **Name:**
 **Date:**
@@ -7,7 +7,7 @@
 >
 > ```
 > assignment_4/
-> ├── AAI_594_Assignment_4a_lab.ipynb   ← executed notebook with all outputs
+> ├── AAI_510_Assignment_4a_lab.ipynb   ← executed notebook with all outputs
 > ├── SUBMISSION_4a.md                  ← this file (with your analysis written in)
 > ├── PROPOSAL_4b.md                    ← project proposal
 > └── screenshots/

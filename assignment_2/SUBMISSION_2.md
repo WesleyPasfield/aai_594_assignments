@@ -1,4 +1,4 @@
-# AAI 594 — Assignment 2 Submission
+# AAI 510 — Assignment 2 Submission
 
 **Name:**  
 **Date:**
@@ -7,7 +7,7 @@
 >
 > ```
 > assignment_2/
-> ├── AAI_594_Assignment_2_Lab.ipynb   ← executed notebook with ALL outputs (including agent-generated cells)
+> ├── AAI_510_Assignment_2_Lab.ipynb   ← executed notebook with ALL outputs (including agent-generated cells)
 > ├── SUBMISSION_2.md                  ← this file
 > └── screenshots/
 >     └── (any additional screenshots, if needed)

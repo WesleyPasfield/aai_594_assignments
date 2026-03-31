@@ -1,4 +1,4 @@
-# AAI 594 — Assignment 5 Submission
+# AAI 510 — Assignment 5 Submission
 
 **Name:**  
 **Date:**
@@ -7,7 +7,7 @@
 >
 > ```
 > assignment_5/
-> ├── AAI_594_Assignment_5_Lab.ipynb   ← executed notebook with all outputs
+> ├── AAI_510_Assignment_5_Lab.ipynb   ← executed notebook with all outputs
 > ├── SUBMISSION_5.md                  ← this file
 > └── screenshots/
 >     └── eval_results.png              ← required: MLflow Evaluation Runs screenshot (see notebook Section 9)
